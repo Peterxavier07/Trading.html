@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XAVIER — Trading Journal</title>
+  <link rel="stylesheet" href="Styling.css">
+</head>
+
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-text">XAVIER<span class="brand-accent">.</span></span>
+    </div>
+
+    <a href="#" class="btn-add-trade-nav">+ <span>Add Trade</span></a>
+
+    <ul class="nav-links">
+      <li class="active">
+        <a href="dashboard.html"><span class="nav-text">Dashboard</span></a>
+      </li>
+      <li>
+        <a href="Tradehistory.html"><span class="nav-text">Trade History</span></a>
+      </li>
+      <li>
+        <a href="psychology.html"><span class="nav-text">Psychology</span></a>
+      </li>
+      <li>
+        <a href="analytics.html"><span class="nav-text">Analytics</span></a>
+      </li>
+      <li>
+        <a href="Calendar.html"><span class="nav-text">Calendar</span></a>
+      </li>
+      <li>
+        <a href="addtrade.html"><span class="nav-text">Goals</span></a>
+      </li>
+      <li>
+        <a href="Riskmanagement.html"><span class="nav-text">Risk Management</span></a>
+      </li>
+      <li>
+        <a href="AItradereview.html"><span class="nav-text">AI Review</span></a>
+      </li>
+      <li>
+        <a href="Integrations.html"><span class="nav-text">Integrations</span></a>
+      <li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- TOP HEADER -->
+    <header class="top-header">
+      <div class="welcome-text">
+        <h1>Welcome Back, Trader</h1>
+        <p>Here is your trading performance summary for this week.</p>
+      </div>
+
+      <div class="header-right">
+        <div class="profile-pill">
+          <div class="avatar">X</div>
+          <span style="font-size: 0.9rem; font-weight: 600;">Alex M.</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- KEY PERFORMANCE STATS (MVP) -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Net Profit / Loss</div>
+        <div class="stat-value positive">+$2,450.00</div>
+        <div class="stat-sub positive">+12.4% this month</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Win Rate</div>
+        <div class="stat-value">68.4%</div>
+        <div class="stat-sub positive">13 Wins / 6 Losses</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Profit Factor</div>
+        <div class="stat-value">2.15</div>
+        <div class="stat-sub neutral">Target: 2.0+</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Avg. Risk / Reward</div>
+        <div class="stat-value">1 : 2.4</div>
+        <div class="stat-sub positive">Well Managed</div>
+      </div>
+    </section>
+
+    <!-- DASHBOARD MAIN GRID -->
+    <div class="dashboard-grid">
+
+      <!-- LEFT COLUMN -->
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+
+        <!-- PERFORMANCE CHART MOCKUP -->
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Equity Curve (Weekly)</span>
+            <span style="font-size: 0.85rem; color: var(--text-muted);">Last 7 Days</span>
+          </div>
+
+          <div class="chart-placeholder">
+            <div class="chart-bar-group">
+              <div class="bar win" style="height: 40%;"></div>
+              <span class="bar-label">Mon</span>
+            </div>
+            <div class="chart-bar-group">
+              <div class="bar win" style="height: 65%;"></div>
+              <span class="bar-label">Tue</span>
+            </div>
+            <div class="chart-bar-group">
+              <div class="bar loss" style="height: 25%;"></div>
+              <span class="bar-label">Wed</span>
+            </div>
+            <div class="chart-bar-group">
+              <div class="bar win" style="height: 85%;"></div>
+              <span class="bar-label">Thu</span>
+            </div>
+            <div class="chart-bar-group">
+              <div class="bar win" style="height: 50%;"></div>
+              <span class="bar-label">Fri</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RECENT TRADES TABLE -->
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Recent Trades</span>
+            <a href="#" class="view-all-link">View All Trades -></a>
+          </div>
+
+          <div class="trade-table-container">
+            <table class="trade-table">
+              <thead>
+                <tr>
+                  <th>Symbol</th>
+                  <th>Type</th>
+                  <th>Entry</th>
+                  <th>Exit</th>
+                  <th>P&L ($)</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>EUR/USD</strong></td>
+                  <td><span class="badge badge-long">BUY</span></td>
+                  <td>1.0850</td>
+                  <td>1.0890</td>
+                  <td class="positive">+$400.00</td>
+                  <td><span class="positive">Win</span></td>
+                </tr>
+                <tr>
+                  <td><strong>BTC/USD</strong></td>
+                  <td><span class="badge badge-short">SELL</span></td>
+                  <td>64,200</td>
+                  <td>64,800</td>
+                  <td class="negative">-$600.00</td>
+                  <td><span class="negative">Loss</span></td>
+                </tr>
+                <tr>
+                  <td><strong>AAPL</strong></td>
+                  <td><span class="badge badge-long">BUY</span></td>
+                  <td>175.20</td>
+                  <td>181.00</td>
+                  <td class="positive">+$580.00</td>
+                  <td><span class="positive">Win</span></td>
+                </tr>
+                <tr>
+                  <td><strong>XAU/USD</strong></td>
+                  <td><span class="badge badge-long">BUY</span></td>
+                  <td>2,340</td>
+                  <td>2,355</td>
+                  <td class="positive">+$750.00</td>
+                  <td><span class="positive">Win</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN / SIDEBAR WIDGETS -->
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+
+        <!-- PSYCHOLOGY & MENTAL CHECK-IN -->
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Psychology & Mood</span>
+          </div>
+          <ul class="widget-list">
+            <li class="widget-item">
+              <div>
+                <div class="widget-item-title">Today's State</div>
+                <div class="widget-item-sub">Disciplined & Focused</div>
+              </div>
+            </li>
+            <li class="widget-item">
+              <div>
+                <div class="widget-item-title">Rule Adherence</div>
+                <div class="widget-item-sub">Followed plan 100%</div>
+              </div>
+              <span class="positive" style="font-weight: bold;">10/10</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- RISK MANAGEMENT WATCH -->
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Risk Parameters</span>
+          </div>
+          <ul class="widget-list">
+            <li class="widget-item">
+              <div>
+                <div class="widget-item-title">Daily Max Drawdown</div>
+                <div class="widget-item-sub">Limit: $1,000</div>
+              </div>
+              <span class="positive" style="font-weight: 600;">$600 Left</span>
+            </li>
+            <li class="widget-item">
+              <div>
+                <div class="widget-item-title">Current Risk / Trade</div>
+                <div class="widget-item-sub">Account Risk Cap</div>
+              </div>
+              <span style="font-weight: 600;">1.5%</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>

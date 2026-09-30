@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XAVIER — Platform Integrations</title>
+  <link rel="stylesheet" href="Styling.css">
+</head>
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-text">XAVIER<span class="brand-accent">.</span></span>
+    </div>
+
+    <a href="addtrade.html" class="btn-add-trade-nav">+ <span>Add Trade</span></a>
+
+   <ul class="nav-links">
+      <li class="active">
+        <a href="dashboard.html"><span class="nav-text">Dashboard</span></a>
+      </li>
+      <li>
+        <a href="Tradehistory.html"><span class="nav-text">Trade History</span></a>
+      </li>
+      <li>
+        <a href="psychology.html"><span class="nav-text">Psychology</span></a>
+      </li>
+      <li>
+        <a href="analytics.html"><span class="nav-text">Analytics</span></a>
+      </li>
+      <li>
+        <a href="Calendar.html"><span class="nav-text">Calendar</span></a>
+      </li>
+      <li>
+        <a href="addtrade.html"><span class="nav-text">Goals</span></a>
+      </li>
+      <li>
+        <a href="Riskmanagement.html"><span class="nav-text">Risk Management</span></a>
+      </li>
+      <li>
+        <a href="AItradereview.html"><span class="nav-text">AI Review</span></a>
+      </li>
+      <li class="active">
+        <a href="Integrations.html"><span class="nav-text">Integrations</span></a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- TOP HEADER -->
+    <header class="top-header">
+      <div class="welcome-text">
+        <h1>Broker & Platform Integrations</h1>
+        <p>Connect trading terminals, prop firm accounts, and automation webhooks to sync executions automatically.</p>
+      </div>
+
+      <div class="header-right">
+        <div class="profile-pill">
+          <div class="avatar">X</div>
+          <span style="font-size: 0.9rem; font-weight: 600;">Alex M.</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- INTEGRATION CARDS GRID -->
+    <section class="integrations-grid">
+
+      <!-- METATRADER 5 -->
+      <div class="integration-card">
+        <div>
+          <div class="integration-header">
+            <div class="integration-icon-wrap" style="color: var(--accent-blue);">5</div>
+            <div class="integration-status status-connected">
+              <span class="status-dot"></span> Active
+            </div>
+          </div>
+
+          <div class="integration-body" style="margin-top: 16px;">
+            <h3>MetaTrader 5 (MT5)</h3>
+            <p>Automated EA trade sync for real-time execution logging and position updates.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="integration-meta">
+            <span>Account: #8821941</span>
+            <span>Last Sync: 2m ago</span>
+          </div>
+          <button class="btn btn-secondary" style="width: 100%; margin-top: 12px; font-size: 0.85rem;">Configure Settings</button>
+        </div>
+      </div>
+
+      <!-- TRADINGVIEW -->
+      <div class="integration-card">
+        <div>
+          <div class="integration-header">
+            <div class="integration-icon-wrap" style="color: var(--accent-green);">TV</div>
+            <div class="integration-status status-connected">
+              <span class="status-dot"></span> Active
+            </div>
+          </div>
+
+          <div class="integration-body" style="margin-top: 16px;">
+            <h3>TradingView Webhooks</h3>
+            <p>Receive PineScript strategy alerts and manual trade alerts directly into your journal.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="integration-meta">
+            <span>2 Active Alerts</span>
+            <span>Webhook Ready</span>
+          </div>
+          <button class="btn btn-secondary" style="width: 100%; margin-top: 12px; font-size: 0.85rem;">Manage Webhooks</button>
+        </div>
+      </div>
+
+      <!-- METATRADER 4 -->
+      <div class="integration-card">
+        <div>
+          <div class="integration-header">
+            <div class="integration-icon-wrap" style="color: var(--accent-purple);">4</div>
+            <div class="integration-status status-disconnected">
+              <span class="status-dot"></span> Disconnected
+            </div>
+          </div>
+
+          <div class="integration-body" style="margin-top: 16px;">
+            <h3>MetaTrader 4 (MT4)</h3>
+            <p>Connect your legacy MT4 broker account via MQL4 sync bridge plugin.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="integration-meta">
+            <span>Not Connected</span>
+            <span>-</span>
+          </div>
+          <button class="btn btn-primary" style="width: 100%; margin-top: 12px; font-size: 0.85rem;">Connect MT4</button>
+        </div>
+      </div>
+
+      <!-- CTRADER -->
+      <div class="integration-card">
+        <div>
+          <div class="integration-header">
+            <div class="integration-icon-wrap" style="color: #f59e0b;">cT</div>
+            <div class="integration-status status-disconnected">
+              <span class="status-dot"></span> Disconnected
+            </div>
+          </div>
+
+          <div class="integration-body" style="margin-top: 16px;">
+            <h3>cTrader Open API</h3>
+            <p>Direct API syncing for Spotware cTrader brokers with high frequency updates.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="integration-meta">
+            <span>OAuth 2.0</span>
+            <span>-</span>
+          </div>
+          <button class="btn btn-primary" style="width: 100%; margin-top: 12px; font-size: 0.85rem;">Connect cTrader</button>
+        </div>
+      </div>
+
+      <!-- PROP FIRM CONNECT -->
+      <div class="integration-card">
+        <div>
+          <div class="integration-header">
+            <div class="integration-icon-wrap" style="color: var(--accent-red);">PF</div>
+            <div class="integration-status status-connected">
+              <span class="status-dot"></span> Active
+            </div>
+          </div>
+
+          <div class="integration-body" style="margin-top: 16px;">
+            <h3>FTMO / Prop Firm Sync</h3>
+            <p>Sync account metrics, daily loss thresholds, and evaluation credentials automatically.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="integration-meta">
+            <span>100k Challenge</span>
+            <span>Sync: Ok</span>
+          </div>
+          <button class="btn btn-secondary" style="width: 100%; margin-top: 12px; font-size: 0.85rem;">View Sync Logs</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- WEBHOOK SETTINGS CARD -->
+    <div class="card" style="max-width: 800px;">
+      <div class="card-header">
+        <span class="card-title">Personal Webhook Endpoint</span>
+      </div>
+
+      <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+        Use this unique URL to push trades from TradingView, Python scripts, or custom algorithms into XAVIER via HTTP POST requests.
+      </p>
+
+      <div class="webhook-key-box">
+        <span>https://api.xavierjournal.com/v1/webhook/usr_x89f2a01k93</span>
+        <button class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.8rem;">Copy URL</button>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>

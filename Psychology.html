@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XAVIER — Psychology Journal</title>
+  <link rel="stylesheet" href="Styling.css">
+</head>
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-text">XAVIER<span class="brand-accent">.</span></span>
+    </div>
+
+    <a href="addtrade.html" class="btn-add-trade-nav">+ <span>Add Trade</span></a>
+
+   <ul class="nav-links">
+      <li>
+        <a href="dashboard.html"><span class="nav-text">Dashboard</span></a>
+      </li>
+      <li>
+        <a href="Tradehistory.html"><span class="nav-text">Trade History</span></a>
+      </li>
+      <li class="active">
+        <a href="psychology.html"><span class="nav-text">Psychology</span></a>
+      </li>
+      <li>
+        <a href="analytics.html"><span class="nav-text">Analytics</span></a>
+      </li>
+      <li>
+        <a href="Calendar.html"><span class="nav-text">Calendar</span></a>
+      </li>
+      <li>
+        <a href="addtrade.html"><span class="nav-text">Goals</span></a>
+      </li>
+      <li>
+        <a href="Riskmanagement.html"><span class="nav-text">Risk Management</span></a>
+      </li>
+      <li>
+        <a href="AItradereview.html"><span class="nav-text">AI Review</span></a>
+      </li>
+      <li>
+        <a href="Integrations.html"><span class="nav-text">Integrations</span></a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- TOP HEADER -->
+    <header class="top-header">
+      <div class="welcome-text">
+        <h1>Psychology & Mindset Journal</h1>
+        <p>Monitor your mental state, emotional discipline, and behavioral patterns.</p>
+      </div>
+
+      <div class="header-right">
+        <div class="profile-pill">
+          <div class="avatar">X</div>
+          <span style="font-size: 0.9rem; font-weight: 600;">Alex M.</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- MINDSET METRICS BANNER -->
+    <section class="psych-summary-grid">
+      <div class="stat-card">
+        <div class="stat-label">Avg. Discipline Score</div>
+        <div class="stat-value positive">8.8 / 10</div>
+        <div class="stat-sub positive">High Adherence</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Dominant Mindset</div>
+        <div class="stat-value">Focused</div>
+        <div class="stat-sub neutral">75% of Sessions</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">FOMO Incidents</div>
+        <div class="stat-value">1</div>
+        <div class="stat-sub positive">-2 from last week</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Rule Compliance Rate</div>
+        <div class="stat-value positive">92%</div>
+        <div class="stat-sub positive">Target: 90%+</div>
+      </div>
+    </section>
+
+    <!-- MAIN JOURNAL LAYOUT -->
+    <div class="psych-card-grid">
+
+      <!-- LEFT COLUMN: NEW ENTRY FORM -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Log Today's Mindset</span>
+        </div>
+
+        <form action="#" method="POST">
+          <div class="form-group" style="margin-bottom: 16px;">
+            <label>Pre-Session Emotional State</label>
+            <div class="mood-selector">
+              <div class="mood-option">
+                <input type="radio" id="m1" name="mood" value="calm" checked>
+                <label for="m1" class="mood-badge">Calm</label>
+              </div>
+              <div class="mood-option">
+                <input type="radio" id="m2" name="mood" value="confident">
+                <label for="m2" class="mood-badge">Confident</label>
+              </div>
+              <div class="mood-option">
+                <input type="radio" id="m3" name="mood" value="anxious">
+                <label for="m3" class="mood-badge">Anxious</label>
+              </div>
+              <div class="mood-option">
+                <input type="radio" id="m4" name="mood" value="fomo">
+                <label for="m4" class="mood-badge">FOMO</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 16px;">
+            <label for="discipline-rating">Plan Compliance / Discipline (1 - 10)</label>
+            <select id="discipline-rating" class="form-control">
+              <option value="10">10 — Perfect Execution</option>
+              <option value="9">9 — Minor Deviation</option>
+              <option value="8">8 — Good Control</option>
+              <option value="7">7 — Fair Execution</option>
+              <option value="5">5 — Multiple Rule Breaks</option>
+              <option value="3">3 — Impulsive / Revenge Trade</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 16px;">
+            <label for="mistake-tag">Behavioral Observations</label>
+            <select id="mistake-tag" class="form-control">
+              <option value="none">No Errors / Followed Plan</option>
+              <option value="early-exit">Closed Trade Early</option>
+              <option value="moved-sl">Moved Stop Loss Away</option>
+              <option value="chased">Chased Market / Late Entry</option>
+              <option value="oversized">Overleveraged / Too Large</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 20px;">
+            <label for="journal-notes">Mental Reflections & Notes</label>
+            <textarea id="journal-notes" class="form-control" placeholder="How did you feel during trade executions? Did any emotions influence your decisions?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Save Mindset Log</button>
+        </form>
+      </div>
+
+      <!-- RIGHT COLUMN: PAST LOGS FEED -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Mindset Log History</span>
+        </div>
+
+        <div class="psych-feed">
+
+          <div class="entry-card">
+            <div class="entry-card-header">
+              <span class="entry-date">May 14, 2026</span>
+              <div class="entry-meta">
+                <span class="tag-pill" style="color: var(--accent-green); border-color: var(--accent-green);">Calm & Focused</span>
+                <span class="score-pill score-high">Discipline: 10/10</span>
+              </div>
+            </div>
+            <div class="entry-text-block">
+              Waited patiently for the EUR/USD retest setup without rushing. Accepted the predefined risk before entering. Took profits at target without greed interfering.
+            </div>
+            <div class="entry-tags">
+              <span class="tag-pill">No Rule Violations</span>
+              <span class="tag-pill">Patient Entry</span>
+            </div>
+          </div>
+
+          <div class="entry-card">
+            <div class="entry-card-header">
+              <span class="entry-date">May 12, 2026</span>
+              <div class="entry-meta">
+                <span class="tag-pill" style="color: var(--accent-red); border-color: var(--accent-red);">Anxious / Impulsive</span>
+                <span class="score-pill score-low">Discipline: 6/10</span>
+              </div>
+            </div>
+            <div class="entry-text-block">
+              Felt eager to trade after missing the morning push. Entered BTC short slightly early before full candle confirmation. Hit stop loss cleanly, but recognized FOMO was driving the decision.
+            </div>
+            <div class="entry-tags">
+              <span class="tag-pill">Early Entry</span>
+              <span class="tag-pill">FOMO Trigger</span>
+            </div>
+          </div>
+
+          <div class="entry-card">
+            <div class="entry-card-header">
+              <span class="entry-date">May 10, 2026</span>
+              <div class="entry-meta">
+                <span class="tag-pill" style="color: var(--accent-blue); border-color: var(--accent-blue);">Confident</span>
+                <span class="score-pill score-mid">Discipline: 9/10</span>
+              </div>
+            </div>
+            <div class="entry-text-block">
+              Executions were steady overall. Stayed focused on AAPL setup during high volume hours. Managed position size according to 1.5% max risk parameters.
+            </div>
+            <div class="entry-tags">
+              <span class="tag-pill">Controlled Risk</span>
+              <span class="tag-pill">Clean Management</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>

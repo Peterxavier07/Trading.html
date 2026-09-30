@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XAVIER — Trading Calendar</title>
+  <link rel="stylesheet" href="Styling.css">
+</head>
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-text">XAVIER<span class="brand-accent">.</span></span>
+    </div>
+
+    <a href="addtrade.html" class="btn-add-trade-nav">+ <span>Add Trade</span></a>
+
+    <ul class="nav-links">
+      <li >
+        <a href="dashboard.html"><span class="nav-text">Dashboard</span></a>
+      </li>
+      <li>
+        <a href="Tradehistory.html"><span class="nav-text">Trade History</span></a>
+      </li>
+      <li>
+        <a href="psychology.html"><span class="nav-text">Psychology</span></a>
+      </li>
+      <li>
+        <a href="analytics.html"><span class="nav-text">Analytics</span></a>
+      </li>
+      <li class="active">
+        <a href="Calendar.html"><span class="nav-text">Calendar</span></a>
+      </li>
+      <li>
+        <a href="addtrade.html"><span class="nav-text">Goals</span></a>
+      </li>
+      <li>
+        <a href="Riskmanagement.html"><span class="nav-text">Risk Management</span></a>
+      </li>
+      <li>
+        <a href="AItradereview.html"><span class="nav-text">AI Review</span></a>
+      </li>
+      <li>
+        <a href="Integrations.html"><span class="nav-text">Integrations</span></a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- TOP HEADER -->
+    <header class="top-header">
+      <div class="welcome-text">
+        <h1>Trading Calendar</h1>
+        <p>Monthly overview of trading days, wins, losses, and net P&L balance.</p>
+      </div>
+
+      <div class="header-right">
+        <a href="add-trade.html" class="btn btn-primary">+ Log Trade</a>
+      </div>
+    </header>
+
+    <!-- MONTH SELECTOR BAR -->
+    <div class="calendar-nav-bar">
+      <div class="calendar-controls">
+        <a href="#" class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.85rem;">← Prev</a>
+        <a href="#" class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.85rem;">Next →</a>
+      </div>
+
+      <div class="calendar-month-title">September 2026</div>
+
+      <div>
+        <a href="#" class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.85rem;">Today</a>
+      </div>
+    </div>
+
+    <!-- CALENDAR GRID -->
+    <div class="calendar-grid">
+
+      <!-- DAY OF WEEK HEADERS -->
+      <div class="calendar-day-head">Sun</div>
+      <div class="calendar-day-head">Mon</div>
+      <div class="calendar-day-head">Tue</div>
+      <div class="calendar-day-head">Wed</div>
+      <div class="calendar-day-head">Thu</div>
+      <div class="calendar-day-head">Fri</div>
+      <div class="calendar-day-head">Sat</div>
+
+      <!-- WEEK 1 -->
+      <div class="calendar-day-card other-month">
+        <div class="calendar-day-number">30</div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">31</div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">1</div>
+        <div class="day-stat-content">
+          <span class="day-pnl positive">+$450</span>
+          <span class="day-trade-count">2 Trades</span>
+        </div>
+        <div class="day-status-indicator day-status-win"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">2</div>
+        <div class="day-stat-content">
+          <span class="day-pnl positive">+$700</span>
+          <span class="day-trade-count">1 Trade</span>
+        </div>
+        <div class="day-status-indicator day-status-win"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">3</div>
+        <div class="day-stat-content">
+          <span class="day-pnl negative">-$200</span>
+          <span class="day-trade-count">1 Trade</span>
+        </div>
+        <div class="day-status-indicator day-status-loss"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">4</div>
+        <div class="day-stat-content">
+          <span class="day-pnl positive">+$380</span>
+          <span class="day-trade-count">2 Trades</span>
+        </div>
+        <div class="day-status-indicator day-status-win"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">5</div>
+      </div>
+
+      <!-- WEEK 2 -->
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">6</div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">7</div>
+        <div class="day-stat-content">
+          <span class="day-pnl positive">+$520</span>
+          <span class="day-trade-count">3 Trades</span>
+        </div>
+        <div class="day-status-indicator day-status-win"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">8</div>
+        <div class="day-stat-content">
+          <span class="day-pnl positive">+$750</span>
+          <span class="day-trade-count">1 Trade</span>
+        </div>
+        <div class="day-status-indicator day-status-win"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">9</div>
+        <div class="day-stat-content">
+          <span class="day-pnl negative">-$450</span>
+          <span class="day-trade-count">2 Trades</span>
+        </div>
+        <div class="day-status-indicator day-status-loss"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">10</div>
+        <div class="day-stat-content">
+          <span class="day-pnl positive">+$580</span>
+          <span class="day-trade-count">1 Trade</span>
+        </div>
+        <div class="day-status-indicator day-status-win"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">11</div>
+        <div class="day-stat-content">
+          <span class="day-pnl positive">+$210</span>
+          <span class="day-trade-count">1 Trade</span>
+        </div>
+        <div class="day-status-indicator day-status-win"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">12</div>
+      </div>
+
+      <!-- WEEK 3 -->
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">13</div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">14</div>
+        <div class="day-stat-content">
+          <span class="day-pnl positive">+$400</span>
+          <span class="day-trade-count">1 Trade</span>
+        </div>
+        <div class="day-status-indicator day-status-win"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">15</div>
+        <div class="day-stat-content">
+          <span class="day-pnl negative">-$600</span>
+          <span class="day-trade-count">1 Trade</span>
+        </div>
+        <div class="day-status-indicator day-status-loss"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">16</div>
+        <div class="day-stat-content">
+          <span class="day-pnl positive">+$310</span>
+          <span class="day-trade-count">2 Trades</span>
+        </div>
+        <div class="day-status-indicator day-status-win"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">17</div>
+        <div class="day-stat-content">
+          <span class="day-pnl positive">+$620</span>
+          <span class="day-trade-count">2 Trades</span>
+        </div>
+        <div class="day-status-indicator day-status-win"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">18</div>
+        <div class="day-stat-content">
+          <span class="day-pnl negative">-$150</span>
+          <span class="day-trade-count">1 Trade</span>
+        </div>
+        <div class="day-status-indicator day-status-loss"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">19</div>
+      </div>
+
+      <!-- WEEK 4 -->
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">20</div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">21</div>
+        <div class="day-stat-content">
+          <span class="day-pnl positive">+$480</span>
+          <span class="day-trade-count">1 Trade</span>
+        </div>
+        <div class="day-status-indicator day-status-win"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">22</div>
+        <div class="day-stat-content">
+          <span class="day-pnl positive">+$290</span>
+          <span class="day-trade-count">2 Trades</span>
+        </div>
+        <div class="day-status-indicator day-status-win"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">23</div>
+        <div class="day-stat-content">
+          <span class="day-pnl positive">+$510</span>
+          <span class="day-trade-count">1 Trade</span>
+        </div>
+        <div class="day-status-indicator day-status-win"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">24</div>
+        <div class="day-stat-content">
+          <span class="day-pnl negative">-$220</span>
+          <span class="day-trade-count">1 Trade</span>
+        </div>
+        <div class="day-status-indicator day-status-loss"></div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">25</div>
+        <div class="day-stat-content">
+          <span class="day-pnl positive">+$340</span>
+          <span class="day-trade-count">1 Trade</span>
+        </div>
+        <div class="day-status-indicator day-status-win"></div>
+      </div>
+
+      <div class="calendar-day-card today">
+        <div class="calendar-day-number">26</div>
+      </div>
+
+      <!-- WEEK 5 -->
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">27</div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">28</div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">29</div>
+      </div>
+
+      <div class="calendar-day-card">
+        <div class="calendar-day-number">30</div>
+      </div>
+
+      <div class="calendar-day-card other-month">
+        <div class="calendar-day-number">1</div>
+      </div>
+
+      <div class="calendar-day-card other-month">
+        <div class="calendar-day-number">2</div>
+      </div>
+
+      <div class="calendar-day-card other-month">
+        <div class="calendar-day-number">3</div>
+      </div>
+
+    </div>
+
+    <!-- MONTHLY SUMMARY BAR -->
+    <div class="calendar-summary-bar">
+      <div class="summary-card">
+        <div class="summary-label">Monthly Net P&L</div>
+        <div class="summary-value positive">+$5,070.00</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">Winning Days</div>
+        <div class="summary-value positive">13 Days</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">Losing Days</div>
+        <div class="summary-value negative">5 Days</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">Day Win Rate</div>
+        <div class="summary-value">72.2%</div>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>

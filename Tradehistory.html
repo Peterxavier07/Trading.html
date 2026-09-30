@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XAVIER — Trade History</title>
+  <link rel="stylesheet" href="Styling.css">
+</head>
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-text">XAVIER<span class="brand-accent">.</span></span>
+    </div>
+
+    <a href="addtrade.html" class="btn-add-trade-nav">+ <span>Add Trade</span></a>
+
+    <ul class="nav-links">
+      <li >
+        <a href="dashboard.html"><span class="nav-text">Dashboard</span></a>
+      </li>
+      <li class="active">
+        <a href="Tradehistory.html"><span class="nav-text">Trade History</span></a>
+      </li>
+      <li>
+        <a href="psychology.html"><span class="nav-text">Psychology</span></a>
+      </li>
+      <li>
+        <a href="analytics.html"><span class="nav-text">Analytics</span></a>
+      </li>
+      <li>
+        <a href="Calendar.html"><span class="nav-text">Calendar</span></a>
+      </li>
+      <li>
+        <a href="addtrade.html"><span class="nav-text">Goals</span></a>
+      </li>
+      <li>
+        <a href="Riskmanagement.html"><span class="nav-text">Risk Management</span></a>
+      </li>
+      <li>
+        <a href="AItradereview.html"><span class="nav-text">AI Review</span></a>
+      </li>
+      <li>
+        <a href="Integrations.html"><span class="nav-text">Integrations</span></a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- TOP HEADER -->
+    <header class="top-header">
+      <div class="welcome-text">
+        <h1>Trade History</h1>
+        <p>Review, filter, and analyze all past trade records.</p>
+      </div>
+
+      <div class="header-right">
+        <a href="add-trade.html" class="btn btn-primary">+ New Trade Log</a>
+      </div>
+    </header>
+
+    <!-- SUMMARY MINI STATS BAR -->
+    <div class="history-summary">
+      <div class="summary-card">
+        <div class="summary-label">Total Trades Logged</div>
+        <div class="summary-value">48</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">Filtered Net P&L</div>
+        <div class="summary-value positive">+$5,120.00</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">Win Rate</div>
+        <div class="summary-value">66.7%</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">Avg Return / Trade</div>
+        <div class="summary-value positive">+$106.66</div>
+      </div>
+    </div>
+
+    <!-- TOOLBAR / FILTERS -->
+    <div class="history-toolbar">
+      <div class="toolbar-search">
+        <input type="text" class="search-input" placeholder="Search by Symbol (e.g. EUR/USD, BTC, AAPL)...">
+      </div>
+
+      <div class="toolbar-filters">
+        <select class="filter-select">
+          <option value="all">All Directions</option>
+          <option value="long">Long (BUY)</option>
+          <option value="short">Short (SELL)</option>
+        </select>
+
+        <select class="filter-select">
+          <option value="all">All Outcome Status</option>
+          <option value="win">Win Only</option>
+          <option value="loss">Loss Only</option>
+        </select>
+
+        <select class="filter-select">
+          <option value="all">All Strategies</option>
+          <option value="breakout">Breakout & Retest</option>
+          <option value="trend">Trend Continuation</option>
+          <option value="reversal">Key Level Reversal</option>
+          <option value="scalp">Scalp</option>
+        </select>
+
+        <select class="filter-select">
+          <option value="this-month">This Month</option>
+          <option value="last-month">Last Month</option>
+          <option value="this-year">This Year</option>
+          <option value="all-time">All Time</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- TRADE HISTORY TABLE CARD -->
+    <div class="card">
+      <div class="trade-table-container">
+        <table class="trade-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Symbol</th>
+              <th>Direction</th>
+              <th>Strategy</th>
+              <th>Entry Price</th>
+              <th>Exit Price</th>
+              <th>Lots / Size</th>
+              <th>P&L ($)</th>
+              <th>Result</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="color: var(--text-muted);">May 14, 2026</td>
+              <td><strong>EUR/USD</strong></td>
+              <td><span class="badge badge-long">BUY</span></td>
+              <td><span class="badge-strategy">Breakout & Retest</span></td>
+              <td>1.0850</td>
+              <td>1.0890</td>
+              <td>1.00</td>
+              <td class="positive">+$400.00</td>
+              <td><span class="badge-status-win">WIN</span></td>
+              <td><a href="#" class="action-link">Details</a></td>
+            </tr>
+            <tr>
+              <td style="color: var(--text-muted);">May 12, 2026</td>
+              <td><strong>BTC/USD</strong></td>
+              <td><span class="badge badge-short">SELL</span></td>
+              <td><span class="badge-strategy">Key Level Reversal</span></td>
+              <td>64,200</td>
+              <td>64,800</td>
+              <td>0.50</td>
+              <td class="negative">-$600.00</td>
+              <td><span class="badge-status-loss">LOSS</span></td>
+              <td><a href="#" class="action-link">Details</a></td>
+            </tr>
+            <tr>
+              <td style="color: var(--text-muted);">May 10, 2026</td>
+              <td><strong>AAPL</strong></td>
+              <td><span class="badge badge-long">BUY</span></td>
+              <td><span class="badge-strategy">Trend Continuation</span></td>
+              <td>175.20</td>
+              <td>181.00</td>
+              <td>100.00</td>
+              <td class="positive">+$580.00</td>
+              <td><span class="badge-status-win">WIN</span></td>
+              <td><a href="#" class="action-link">Details</a></td>
+            </tr>
+            <tr>
+              <td style="color: var(--text-muted);">May 08, 2026</td>
+              <td><strong>XAU/USD</strong></td>
+              <td><span class="badge badge-long">BUY</span></td>
+              <td><span class="badge-strategy">Breakout & Retest</span></td>
+              <td>2,340.00</td>
+              <td>2,355.00</td>
+              <td>0.50</td>
+              <td class="positive">+$750.00</td>
+              <td><span class="badge-status-win">WIN</span></td>
+              <td><a href="#" class="action-link">Details</a></td>
+            </tr>
+            <tr>
+              <td style="color: var(--text-muted);">May 05, 2026</td>
+              <td><strong>GBP/JPY</strong></td>
+              <td><span class="badge badge-short">SELL</span></td>
+              <td><span class="badge-strategy">Scalp</span></td>
+              <td>198.40</td>
+              <td>198.85</td>
+              <td>2.00</td>
+              <td class="negative">-$450.00</td>
+              <td><span class="badge-status-loss">LOSS</span></td>
+              <td><a href="#" class="action-link">Details</a></td>
+            </tr>
+            <tr>
+              <td style="color: var(--text-muted);">May 02, 2026</td>
+              <td><strong>NVDA</strong></td>
+              <td><span class="badge badge-long">BUY</span></td>
+              <td><span class="badge-strategy">Trend Continuation</span></td>
+              <td>880.00</td>
+              <td>915.00</td>
+              <td>20.00</td>
+              <td class="positive">+$700.00</td>
+              <td><span class="badge-status-win">WIN</span></td>
+              <td><a href="#" class="action-link">Details</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PAGINATION CONTROLS -->
+      <div class="pagination-container">
+        <div class="pagination-info">
+          Showing 1 to 6 of 48 trades
+        </div>
+        <div class="pagination-controls">
+          <a href="#" class="page-btn disabled">Previous</a>
+          <a href="#" class="page-btn active">1</a>
+          <a href="#" class="page-btn">2</a>
+          <a href="#" class="page-btn">3</a>
+          <a href="#" class="page-btn">Next</a>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>

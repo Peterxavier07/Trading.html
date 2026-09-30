@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XAVIER — Analytics</title>
+  <link rel="stylesheet" href="Styling.css">
+</head>
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-text">XAVIER<span class="brand-accent">.</span></span>
+    </div>
+
+    <a href="addtrade.html" class="btn-add-trade-nav">+ <span>Add Trade</span></a>
+
+    <ul class="nav-links">
+      <li>
+        <a href="dashboard.html"><span class="nav-text">Dashboard</span></a>
+      </li>
+      <li>
+        <a href="Tradehistory.html"><span class="nav-text">Trade History</span></a>
+      </li>
+      <li>
+        <a href="psychology.html"><span class="nav-text">Psychology</span></a>
+      </li>
+      <li class="active">
+        <a href="analytics.html"><span class="nav-text">Analytics</span></a>
+      </li>
+      <li>
+        <a href="Calendar.html"><span class="nav-text">Calendar</span></a>
+      </li>
+      <li>
+        <a href="addtrade.html"><span class="nav-text">Goals</span></a>
+      </li>
+      <li>
+        <a href="Riskmanagement.html"><span class="nav-text">Risk Management</span></a>
+      </li>
+      <li>
+        <a href="AItradereview.html"><span class="nav-text">AI Review</span></a>
+      </li>
+      <li>
+        <a href="Integrations.html"><span class="nav-text">Integrations</span></a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- TOP HEADER -->
+    <header class="top-header">
+      <div class="welcome-text">
+        <h1>Performance Analytics</h1>
+        <p>In-depth statistics on win rate, drawdown, strategies, and execution consistency.</p>
+      </div>
+
+      <div class="header-right analytics-header-actions">
+        <select class="filter-select">
+          <option value="30">Last 30 Days</option>
+          <option value="90">Last 90 Days</option>
+          <option value="365">This Year</option>
+          <option value="all">All Time</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- KEY PERFORMANCE STATS GRID -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Total Net Profit</div>
+        <div class="stat-value positive">+$5,120.00</div>
+        <div class="stat-sub positive">+22.4% Account Growth</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Profit Factor</div>
+        <div class="stat-value">2.34</div>
+        <div class="stat-sub positive">Gross Win / Gross Loss</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Max Peak Drawdown</div>
+        <div class="stat-value negative">-4.2%</div>
+        <div class="stat-sub positive">Within 5% Target Limit</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Avg. Win vs Avg. Loss</div>
+        <div class="stat-value">$410 / $215</div>
+        <div class="stat-sub positive">1.91 Win/Loss Ratio</div>
+      </div>
+    </section>
+
+    <!-- TOP ANALYTICS GRID -->
+    <div class="analytics-grid-top">
+
+      <!-- EQUITY & CUMULATIVE P&L CHART -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Cumulative Equity Growth</span>
+          <span style="font-size: 0.85rem; color: var(--text-muted);">48 Trades Logged</span>
+        </div>
+
+        <div class="chart-placeholder">
+          <div class="chart-bar-group">
+            <div class="bar win" style="height: 30%;"></div>
+            <span class="bar-label">W1</span>
+          </div>
+          <div class="chart-bar-group">
+            <div class="bar win" style="height: 45%;"></div>
+            <span class="bar-label">W2</span>
+          </div>
+          <div class="chart-bar-group">
+            <div class="bar loss" style="height: 35%;"></div>
+            <span class="bar-label">W3</span>
+          </div>
+          <div class="chart-bar-group">
+            <div class="bar win" style="height: 60%;"></div>
+            <span class="bar-label">W4</span>
+          </div>
+          <div class="chart-bar-group">
+            <div class="bar win" style="height: 75%;"></div>
+            <span class="bar-label">W5</span>
+          </div>
+          <div class="chart-bar-group">
+            <div class="bar win" style="height: 90%;"></div>
+            <span class="bar-label">W6</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- KEY METRICS BREAKDOWN -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Execution Parameters</span>
+        </div>
+
+        <table class="data-list-table">
+          <tr>
+            <td style="color: var(--text-muted);">Total Trades</td>
+            <td style="text-align: right; font-weight: 700;">48</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-muted);">Winning Trades</td>
+            <td style="text-align: right; font-weight: 700;" class="positive">32 (66.7%)</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-muted);">Losing Trades</td>
+            <td style="text-align: right; font-weight: 700;" class="negative">16 (33.3%)</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-muted);">Max Consecutive Wins</td>
+            <td style="text-align: right; font-weight: 700;" class="positive">6</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-muted);">Max Consecutive Losses</td>
+            <td style="text-align: right; font-weight: 700;" class="negative">2</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-muted);">Avg. Holding Duration</td>
+            <td style="text-align: right; font-weight: 700;">1h 45m</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM ANALYTICS GRID -->
+    <div class="analytics-grid-bottom">
+
+      <!-- STRATEGY PERFORMANCE BREAKDOWN -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Performance by Strategy</span>
+        </div>
+
+        <div class="breakdown-list">
+          <div class="breakdown-item">
+            <div class="breakdown-header">
+              <span class="breakdown-title">Breakout & Retest</span>
+              <span class="breakdown-stats positive">+$2,850.00 (74% Win Rate)</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill green" style="width: 74%;"></div>
+            </div>
+          </div>
+
+          <div class="breakdown-item">
+            <div class="breakdown-header">
+              <span class="breakdown-title">Trend Continuation</span>
+              <span class="breakdown-stats positive">+$1,820.00 (68% Win Rate)</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill blue" style="width: 68%;"></div>
+            </div>
+          </div>
+
+          <div class="breakdown-item">
+            <div class="breakdown-header">
+              <span class="breakdown-title">Key Level Reversal</span>
+              <span class="breakdown-stats positive">+$750.00 (55% Win Rate)</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill purple" style="width: 55%;"></div>
+            </div>
+          </div>
+
+          <div class="breakdown-item">
+            <div class="breakdown-header">
+              <span class="breakdown-title">Scalp</span>
+              <span class="breakdown-stats negative">-$300.00 (40% Win Rate)</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill red" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ASSET DISTRIBUTION & PROFITABILITY -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Profitability by Asset Class</span>
+        </div>
+
+        <div class="breakdown-list">
+          <div class="breakdown-item">
+            <div class="breakdown-header">
+              <span class="breakdown-title">Forex (EUR/USD, GBP/JPY)</span>
+              <span class="breakdown-stats positive">+$2,400.00 (22 Trades)</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill green" style="width: 80%;"></div>
+            </div>
+          </div>
+
+          <div class="breakdown-item">
+            <div class="breakdown-header">
+              <span class="breakdown-title">Indices / Stocks (AAPL, NVDA)</span>
+              <span class="breakdown-stats positive">+$1,950.00 (16 Trades)</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill blue" style="width: 65%;"></div>
+            </div>
+          </div>
+
+          <div class="breakdown-item">
+            <div class="breakdown-header">
+              <span class="breakdown-title">Commodities (XAU/USD)</span>
+              <span class="breakdown-stats positive">+$1,120.00 (6 Trades)</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill purple" style="width: 50%;"></div>
+            </div>
+          </div>
+
+          <div class="breakdown-item">
+            <div class="breakdown-header">
+              <span class="breakdown-title">Crypto (BTC/USD)</span>
+              <span class="breakdown-stats negative">-$350.00 (4 Trades)</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill red" style="width: 25%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>

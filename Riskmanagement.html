@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XAVIER — Risk Management</title>
+  <link rel="stylesheet" href="Styling.css">
+</head>
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-text">XAVIER<span class="brand-accent">.</span></span>
+    </div>
+
+    <a href="addtrade.html" class="btn-add-trade-nav">+ <span>Add Trade</span></a>
+
+    <ul class="nav-links">
+      <li>
+        <a href="dashboard.html"><span class="nav-text">Dashboard</span></a>
+      </li>
+      <li>
+        <a href="Tradehistory.html"><span class="nav-text">Trade History</span></a>
+      </li>
+      <li>
+        <a href="psychology.html"><span class="nav-text">Psychology</span></a>
+      </li>
+      <li>
+        <a href="analytics.html"><span class="nav-text">Analytics</span></a>
+      </li>
+      <li>
+        <a href="Calendar.html"><span class="nav-text">Calendar</span></a>
+      </li>
+      <li>
+        <a href="addtrade.html"><span class="nav-text">Goals</span></a>
+      </li>
+      <li class="active">
+        <a href="Riskmanagement.html"><span class="nav-text">Risk Management</span></a>
+      </li>
+      <li>
+        <a href="AItradereview.html"><span class="nav-text">AI Review</span></a>
+      </li>
+      <li>
+        <a href="Integrations.html"><span class="nav-text">Integrations</span></a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- TOP HEADER -->
+    <header class="top-header">
+      <div class="welcome-text">
+        <h1>Risk Management Engine</h1>
+        <p>Monitor position parameters, account exposure, daily risk thresholds, and position sizing.</p>
+      </div>
+
+      <div class="header-right">
+        <div class="profile-pill">
+          <div class="avatar">X</div>
+          <span style="font-size: 0.9rem; font-weight: 600;">Alex M.</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- RISK STATS SUMMARY -->
+    <section class="risk-summary-grid">
+      <div class="stat-card">
+        <div class="stat-label">Max Risk Per Trade</div>
+        <div class="stat-value">1.50%</div>
+        <div class="stat-sub neutral">$375.00 Max Risk</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Max Daily Loss Limit</div>
+        <div class="stat-value negative">-$750.00</div>
+        <div class="stat-sub positive">3.0% Account Threshold</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Today's Risk Exposure</div>
+        <div class="stat-value positive">$0.00</div>
+        <div class="stat-sub positive">No Active Positions</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Avg. Risk-Reward Ratio</div>
+        <div class="stat-value positive">1 : 2.15</div>
+        <div class="stat-sub positive">Target: 1 : 2.0+</div>
+      </div>
+    </section>
+
+    <!-- TWO COLUMN RISK LAYOUT -->
+    <div class="risk-layout-grid">
+
+      <!-- LEFT COLUMN: POSITION SIZE CALCULATOR -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Position Size Calculator</span>
+        </div>
+
+        <form action="#" method="POST" onsubmit="event.preventDefault();">
+          <div class="form-group" style="margin-bottom: 14px;">
+            <label for="calc-balance">Account Balance ($)</label>
+            <input type="number" id="calc-balance" class="form-control" value="25000">
+          </div>
+
+          <div class="form-grid" style="margin-bottom: 14px;">
+            <div class="form-group">
+              <label for="calc-risk-pct">Risk Percentage (%)</label>
+              <input type="number" id="calc-risk-pct" class="form-control" value="1.5" step="0.1">
+            </div>
+
+            <div class="form-group">
+              <label for="calc-sl-pips">Stop Loss (Pips / Points)</label>
+              <input type="number" id="calc-sl-pips" class="form-control" value="25">
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 16px;">
+            <label for="calc-asset">Asset Type</label>
+            <select id="calc-asset" class="form-control">
+              <option value="forex">Forex Major (Standard Lot = $10/pip)</option>
+              <option value="indices">Index (US30 / NAS100)</option>
+              <option value="crypto">Crypto (BTC / ETH)</option>
+            </select>
+          </div>
+
+          <div class="calc-result-box">
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Recommended Lot Size</div>
+              <div class="calc-result-val">1.50 Lots</div>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Monetary Risk</div>
+              <div style="font-weight: 700; color: var(--accent-red);">$375.00</div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- RIGHT COLUMN: RISK THRESHOLDS & LIMIT GAUGES -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Account Safety Gauges</span>
+        </div>
+
+        <div class="risk-gauge-container">
+          <div class="gauge-item">
+            <div class="gauge-label-group">
+              <span class="gauge-title">Current Peak Drawdown</span>
+              <span class="gauge-value">2.1% / 5.0% Max</span>
+            </div>
+            <div class="gauge-bar-track">
+              <div class="gauge-bar-fill safe" style="width: 42%;"></div>
+            </div>
+          </div>
+
+          <div class="gauge-item">
+            <div class="gauge-label-group">
+              <span class="gauge-title">Today's Loss Limit Used</span>
+              <span class="gauge-value">$0.00 / $750.00</span>
+            </div>
+            <div class="gauge-bar-track">
+              <div class="gauge-bar-fill safe" style="width: 0%;"></div>
+            </div>
+          </div>
+
+          <div class="gauge-item">
+            <div class="gauge-label-group">
+              <span class="gauge-title">Weekly Loss Cap</span>
+              <span class="gauge-value">$450.00 / $1,500.00</span>
+            </div>
+            <div class="gauge-bar-track">
+              <div class="gauge-bar-fill warning" style="width: 30%;"></div>
+            </div>
+          </div>
+
+          <div class="gauge-item">
+            <div class="gauge-label-group">
+              <span class="gauge-title">Consecutive Loss Circuit Breaker</span>
+              <span class="gauge-value">0 / 3 Losses (Locks account for the day)</span>
+            </div>
+            <div class="gauge-bar-track">
+              <div class="gauge-bar-fill safe" style="width: 0%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RISK PROTOCOLS TABLE -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Mandatory Risk Protocols</span>
+      </div>
+
+      <div class="table-responsive">
+        <table class="risk-rules-table">
+          <thead>
+            <tr>
+              <th>Rule Description</th>
+              <th>Threshold / Constraint</th>
+              <th>Enforcement Action</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="font-weight: 600;">Max Position Sizing</td>
+              <td>1.5% of total capital per setup</td>
+              <td>Prevent order entry over 1.5%</td>
+              <td><span class="tag-pill" style="color: var(--accent-green); border-color: var(--accent-green);">Active</span></td>
+            </tr>
+            <tr>
+              <td style="font-weight: 600;">Daily Loss Stop-Gun</td>
+              <td>$750 net loss in a single day</td>
+              <td>Auto-lock trading dashboard until next session</td>
+              <td><span class="tag-pill" style="color: var(--accent-green); border-color: var(--accent-green);">Active</span></td>
+            </tr>
+            <tr>
+              <td style="font-weight: 600;">Minimum Risk-to-Reward</td>
+              <td>1 : 1.5 RRR minimum required</td>
+              <td>Flag trade entry as high risk violation</td>
+              <td><span class="tag-pill" style="color: var(--accent-green); border-color: var(--accent-green);">Active</span></td>
+            </tr>
+            <tr>
+              <td style="font-weight: 600;">Max Open Concurrent Trades</td>
+              <td>2 Active Positions</td>
+              <td>Block 3rd open position entry</td>
+              <td><span class="tag-pill" style="color: var(--accent-green); border-color: var(--accent-green);">Active</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>

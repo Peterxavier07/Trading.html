@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XAVIER — Add Trade</title>
+  <link rel="stylesheet" href="Styling.css">
+</head>
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-text">XAVIER<span class="brand-accent">.</span></span>
+    </div>
+
+    <a href="addtrade.html" class="btn-add-trade-nav">+ <span>Add Trade</span></a>
+
+    <ul class="nav-links">
+      <li>
+        <a href="dashboard.html"><span class="nav-text">Dashboard</span></a>
+      </li>
+      <li>
+        <a href="Tradehistory.html"><span class="nav-text">Trade History</span></a>
+      </li>
+      <li>
+        <a href="psychology.html"><span class="nav-text">Psychology</span></a>
+      </li>
+      <li>
+        <a href="analytics.html"><span class="nav-text">Analytics</span></a>
+      </li>
+      <li>
+        <a href="Calendar.html"><span class="nav-text">Calendar</span></a>
+      </li>
+      <li class="active">
+        <a href="addtrade.html"><span class="nav-text">Goals</span></a>
+      </li>
+      <li>
+        <a href="Riskmanagement.html"><span class="nav-text">Risk Management</span></a>
+      </li>
+      <li>
+        <a href="AItradereview.html"><span class="nav-text">AI Review</span></a>
+      </li>
+      <li>
+        <a href="Integrations.html"><span class="nav-text">Integrations</span></a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- TOP HEADER -->
+    <header class="top-header">
+      <div class="welcome-text">
+        <h1>Log New Trade</h1>
+        <p>Record your execution details, setup criteria, and risk parameters.</p>
+      </div>
+
+      <div class="header-right">
+        <div class="profile-pill">
+          <div class="avatar">X</div>
+          <span style="font-size: 0.9rem; font-weight: 600;">Alex M.</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ADD TRADE FORM CARD -->
+    <div class="card" style="max-width: 900px; margin: 0 auto;">
+      <div class="card-header">
+        <span class="card-title">Trade Entry Form</span>
+      </div>
+
+      <form class="form-grid">
+
+        <!-- Asset / Symbol -->
+        <div class="form-group">
+          <label for="symbol">Symbol / Pair</label>
+          <input type="text" id="symbol" class="form-control" placeholder="e.g. EURUSD, BTCUSD, AAPL" required>
+        </div>
+
+        <!-- Direction -->
+        <div class="form-group">
+          <label for="direction">Direction</label>
+          <select id="direction" class="form-control" required>
+            <option value="BUY">BUY / LONG</option>
+            <option value="SELL">SELL / SHORT</option>
+          </select>
+        </div>
+
+        <!-- Entry Price -->
+        <div class="form-group">
+          <label for="entryPrice">Entry Price</label>
+          <input type="number" id="entryPrice" step="any" class="form-control" placeholder="0.0000" required>
+        </div>
+
+        <!-- Exit Price -->
+        <div class="form-group">
+          <label for="exitPrice">Exit Price</label>
+          <input type="number" id="exitPrice" step="any" class="form-control" placeholder="0.0000">
+        </div>
+
+        <!-- Stop Loss -->
+        <div class="form-group">
+          <label for="stopLoss">Stop Loss Price</label>
+          <input type="number" id="stopLoss" step="any" class="form-control" placeholder="0.0000">
+        </div>
+
+        <!-- Take Profit -->
+        <div class="form-group">
+          <label for="takeProfit">Take Profit Price</label>
+          <input type="number" id="takeProfit" step="any" class="form-control" placeholder="0.0000">
+        </div>
+
+        <!-- Position Size / Lots -->
+        <div class="form-group">
+          <label for="positionSize">Position Size (Lots/Contracts)</label>
+          <input type="number" id="positionSize" step="any" class="form-control" placeholder="1.00" required>
+        </div>
+
+        <!-- Net PnL -->
+        <div class="form-group">
+          <label for="pnl">Net Profit / Loss ($)</label>
+          <input type="number" id="pnl" step="any" class="form-control" placeholder="e.g. 250.00 or -100.00">
+        </div>
+
+        <!-- Strategy / Setup -->
+        <div class="form-group">
+          <label for="strategy">Strategy / Setup</label>
+          <select id="strategy" class="form-control">
+            <option value="Breakout">Breakout & Retest</option>
+            <option value="Trend Continuation">Trend Continuation</option>
+            <option value="Reversal">Reversal / Liquidity Sweep</option>
+            <option value="Range Bound">Range Bound</option>
+            <option value="Scalp">Scalp Execution</option>
+          </select>
+        </div>
+
+        <!-- Session -->
+        <div class="form-group">
+          <label for="session">Trading Session</label>
+          <select id="session" class="form-control">
+            <option value="London">London Session</option>
+            <option value="New York">New York Session</option>
+            <option value="Asian">Asian Session</option>
+            <option value="Overlap">London / NY Overlap</option>
+          </select>
+        </div>
+
+        <!-- Entry Date/Time -->
+        <div class="form-group">
+          <label for="entryTime">Entry Date & Time</label>
+          <input type="datetime-local" id="entryTime" class="form-control" required>
+        </div>
+
+        <!-- Exit Date/Time -->
+        <div class="form-group">
+          <label for="exitTime">Exit Date & Time</label>
+          <input type="datetime-local" id="exitTime" class="form-control">
+        </div>
+
+        <!-- Chart Screenshot URL -->
+        <div class="form-group full-width">
+          <label for="screenshot">Chart Image / TradingView URL</label>
+          <input type="url" id="screenshot" class="form-control" placeholder="https://www.tradingview.com/x/...">
+        </div>
+
+        <!-- Trade Notes / Execution Journal -->
+        <div class="form-group full-width">
+          <label for="notes">Trade Notes & Execution Review</label>
+          <textarea id="notes" class="form-control" placeholder="What was your rationale for entering? Did you follow your risk rules? Any mistakes made?"></textarea>
+        </div>
+
+        <!-- Form Action Buttons -->
+        <div class="form-group full-width" style="display: flex; gap: 12px; justify-content: flex-end; margin-top: 12px;">
+          <a href="trade-history.html" class="btn btn-secondary">Cancel</a>
+          <button type="submit" class="btn btn-primary">Save Trade Entry</button>
+        </div>
+
+      </form>
+    </div>
+
+  </main>
+
+</body>
+</html>
